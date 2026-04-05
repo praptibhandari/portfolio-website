@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prapti Bhandari | Frontend Developer & AI Enthusiast</title>
+  <meta name="description" content="Prapti Bhandari - First-year B.Tech CSE (AI) student, frontend developer passionate about building responsive web apps and API-integrated tools." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">PB<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active" id="nav-hero">Home</a></li>
+      <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+      <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+    </ul>
+    <a href="mailto:praptibhandari249@gmail.com" class="nav-cta" id="hire-btn">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Three.js Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="section hero-section">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Available for Internships</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-greeting">Hello, I'm</span>
+        <span class="hero-name">Prapti<br><em>Bhandari</em></span>
+      </h1>
+      <p class="hero-subtitle">Frontend Developer <span class="divider">·</span> AI Enthusiast <span class="divider">·</span> Problem Solver</p>
+      <p class="hero-desc">Building beautiful, responsive web experiences and API-integrated tools. Passionate about clean UIs and real-world problem solving.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary" id="view-work-btn">View My Work</a>
+        <a href="#contact" class="btn-outline" id="contact-btn">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span>
+          <span class="stat-label">Tech Skills</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="1">0</span>
+          <span class="stat-label">Year Experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-3d-wrapper">
+      <div class="hero-card-3d" id="hero-3d-card">
+        <div class="card-face card-front">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <span class="avatar-initials">PB</span>
+            </div>
+          </div>
+          <p class="card-name">Prapti Bhandari</p>
+          <p class="card-role">Frontend Developer</p>
+          <div class="card-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+      <div class="floating-badge fb-1">⚛️ React</div>
+      <div class="floating-badge fb-2">🐍 Python</div>
+      <div class="floating-badge fb-3">🌐 REST API</div>
+      <div class="floating-badge fb-4">☁️ Netlify</div>
+    </div>
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about-section">
+    <div class="section-header">
+      <span class="section-tag">01 — About</span>
+      <h2 class="section-title">Who Am I?</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-card-3d" id="about-tilt">
+          <div class="about-img-wrapper">
+            <div class="about-avatar-large">
+              <span>PB</span>
+              <div class="about-avatar-ring"></div>
+            </div>
+          </div>
+          <div class="about-card-info">
+            <div class="info-row">
+              <span class="info-icon">📍</span>
+              <span>Pune, India</span>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">🎓</span>
+              <span>B.Tech CSE (AI) — 2025–2029</span>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">💼</span>
+              <span>Open to Opportunities</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-glow"></div>
+      </div>
+      <div class="about-content">
+        <p class="about-text">
+          I'm a <strong>First-year B.Tech CSE (AI) student</strong> at Ajenkya DY Patil University, passionate about creating user-centered digital experiences. I thrive at the intersection of beautiful design and functional code.
+        </p>
+        <p class="about-text">
+          My journey started with curiosity — tinkering with HTML and CSS, and evolving into building full responsive web apps and API-integrated tools. I believe in <strong>learning by building</strong>.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">🚀</div>
+            <div>
+              <h4>Fast Learner</h4>
+              <p>Quickly adapts to new technologies and frameworks</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">🎨</div>
+            <div>
+              <h4>Design-Focused</h4>
+              <p>Pixel-perfect UIs with clean, minimal aesthetics</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">🔗</div>
+            <div>
+              <h4>API Integration</h4>
+              <p>Experienced with REST APIs and real-time data</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">🏆</div>
+            <div>
+              <h4>Hackathon Ready</h4>
+              <p>Competed in multiple coding events and challenges</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-links">
+          <a href="https://linkedin.com/in/prapti-bhandari-" target="_blank" class="social-link" id="linkedin-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/praptibhandari" target="_blank" class="social-link" id="github-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="section-header">
+      <span class="section-tag">02 — Skills</span>
+      <h2 class="section-title">My Tech Stack</h2>
+    </div>
+    <div class="skills-orbit-wrapper">
+      <div class="orbit-center">
+        <span class="orbit-label">Tech</span>
+        <span class="orbit-sublabel">Stack</span>
+      </div>
+      <!-- Orbit rings rendered by JS -->
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category" id="skill-languages">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">💻</span>
+          <h3>Languages</h3>
+        </div>
+        <div class="skill-pills">
+          <div class="skill-pill" data-level="85">
+            <span class="pill-name">JavaScript</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="skill-pill" data-level="75">
+            <span class="pill-name">Python</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:75%"></div></div>
+          </div>
+          <div class="skill-pill" data-level="70">
+            <span class="pill-name">Java</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:70%"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category" id="skill-web">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">🌐</span>
+          <h3>Web Technologies</h3>
+        </div>
+        <div class="skill-pills">
+          <div class="skill-pill" data-level="90">
+            <span class="pill-name">HTML5</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:90%"></div></div>
+          </div>
+          <div class="skill-pill" data-level="88">
+            <span class="pill-name">CSS3</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:88%"></div></div>
+          </div>
+          <div class="skill-pill" data-level="80">
+            <span class="pill-name">JavaScript ES6+</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:80%"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category" id="skill-tools">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">🛠️</span>
+          <h3>Tools & Platforms</h3>
+        </div>
+        <div class="skill-pills">
+          <div class="skill-pill" data-level="82">
+            <span class="pill-name">Git & GitHub</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:82%"></div></div>
+          </div>
+          <div class="skill-pill" data-level="78">
+            <span class="pill-name">VS Code</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:78%"></div></div>
+          </div>
+          <div class="skill-pill" data-level="72">
+            <span class="pill-name">Netlify</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:72%"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category" id="skill-concepts">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">🧠</span>
+          <h3>Concepts</h3>
+        </div>
+        <div class="skill-pills">
+          <div class="skill-pill" data-level="76">
+            <span class="pill-name">Data Structures & Algorithms</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:76%"></div></div>
+          </div>
+          <div class="skill-pill" data-level="80">
+            <span class="pill-name">OOP</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:80%"></div></div>
+          </div>
+          <div class="skill-pill" data-level="85">
+            <span class="pill-name">REST API Integration</span>
+            <div class="pill-bar"><div class="pill-fill" style="--w:85%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="section-header">
+      <span class="section-tag">03 — Projects</span>
+      <h2 class="section-title">What I've Built</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card" id="project-vedam">
+        <div class="project-card-inner">
+          <div class="project-number">01</div>
+          <div class="project-emoji">🏛️</div>
+          <h3 class="project-title">Vedam Clubs Website</h3>
+          <p class="project-desc">Designed and developed a fully responsive multi-section landing page for college clubs, improving discoverability for 500+ students. Structured navigation across societies, events, and engagement sections.</p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-year">2025</span>
+            <div class="project-links">
+              <a href="https://github.com/praptibhandari" target="_blank" class="project-link" id="vedam-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <div class="project-card featured" id="project-weather">
+        <div class="project-card-inner">
+          <div class="project-number">02</div>
+          <div class="project-emoji">⛅</div>
+          <h3 class="project-title">Weather App</h3>
+          <p class="project-desc">Integrated a public weather REST API to fetch and render real-time data including temperature, humidity, and weather conditions. Implemented dynamic UI state changes that adapt visually based on live weather output. Deployed via Netlify.</p>
+          <div class="project-tags">
+            <span>JavaScript</span>
+            <span>REST API</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-year">2025</span>
+            <div class="project-links">
+              <a href="https://github.com/praptibhandari" target="_blank" class="project-link" id="weather-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+          <div class="featured-badge">Featured</div>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <div class="project-card" id="project-task">
+        <div class="project-card-inner">
+          <div class="project-number">03</div>
+          <div class="project-emoji">✅</div>
+          <h3 class="project-title">Task Filter App</h3>
+          <p class="project-desc">Built an interactive task management application with real-time filtering across All, Completed, and Pending states. Engineered dynamic DOM rendering and persistent task-state tracking without any external libraries. Clean UX patterns.</p>
+          <div class="project-tags">
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-year">2025</span>
+            <div class="project-links">
+              <a href="https://github.com/praptibhandari" target="_blank" class="project-link" id="task-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section education-section">
+    <div class="section-header">
+      <span class="section-tag">04 — Education</span>
+      <h2 class="section-title">My Academic Journey</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" id="edu-adypu">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2025 – 2029</div>
+          <h3>Ajenkya DY Patil University (ADYPU)</h3>
+          <p class="timeline-degree">B.Tech in Computer Science & Engineering — Artificial Intelligence</p>
+          <p class="timeline-location">📍 Pune, India</p>
+          <div class="timeline-tags">
+            <span>AI/ML</span><span>DSA</span><span>Web Dev</span><span>OOP</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item" id="edu-vedam">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-year">Graduated 2025</div>
+          <h3>Vedam School of Technology</h3>
+          <p class="timeline-degree">Higher Secondary Education</p>
+          <p class="timeline-location">📍 Pune, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header">
+      <span class="section-tag">05 — Contact</span>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-intro">I'm actively looking for internship opportunities in <strong>frontend development</strong>, <strong>web development</strong>, or <strong>tech roles</strong>. If you have something interesting, let's talk!</p>
+        <div class="contact-cards">
+          <a href="mailto:praptibhandari249@gmail.com" class="contact-card" id="email-link">
+            <div class="contact-card-icon">📧</div>
+            <div>
+              <p class="contact-card-label">Email</p>
+              <p class="contact-card-value">praptibhandari249@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:+917418900120" class="contact-card" id="phone-link">
+            <div class="contact-card-icon">📱</div>
+            <div>
+              <p class="contact-card-label">Phone</p>
+              <p class="contact-card-value">+91-741-8900120</p>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/prapti-bhandari-" target="_blank" class="contact-card" id="linkedin-contact">
+            <div class="contact-card-icon">💼</div>
+            <div>
+              <p class="contact-card-label">LinkedIn</p>
+              <p class="contact-card-value">linkedin.com/in/prapti-bhandari-</p>
+            </div>
+          </a>
+          <a href="https://github.com/praptibhandari" target="_blank" class="contact-card" id="github-contact">
+            <div class="contact-card-icon">🐙</div>
+            <div>
+              <p class="contact-card-label">GitHub</p>
+              <p class="contact-card-value">github.com/praptibhandari</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" id="send-btn">
+          <span>Send Message</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+        <div class="form-success" id="form-success">
+          <span>🎉 Message sent! I'll get back to you soon.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">PB<span class="dot">.</span></div>
+      <p class="footer-text">Crafted with ❤️ by Prapti Bhandari · Pune, India</p>
+      <p class="footer-sub">© 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
