@@ -3,7 +3,7 @@
 Welcome to the source code of my personal portfolio website! This is an interactive, responsive 3D web experience built to showcase my skills, projects, and journey as a Frontend Developer and AI Enthusiast.
 
 ## 🌐 Live Demo
-*(Insert your Vercel or live demo link here once deployed)*
+*1st-portfolio-z4qg-i99i1j3ti-praptibhandaris-projects.vercel.app*
 
 ## ✨ Features
 - **3D Interactive Elements**: Integrated using Three.js to provide an engaging background and floating elements.
